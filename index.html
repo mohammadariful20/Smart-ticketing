@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 </head>
+
 <body class="lg:w-11/12 mx-auto">
   <!-- navber section  -->
   <div class="navbar bg-base-100">
@@ -29,17 +30,31 @@
           <li><a>Home</a></li>
           <li><a>About</a></li>
           <li><a>Destination</a></li>
-          <li><a>Search</a></li>
+          <label class="input input-bordered flex items-center gap-2">
+            <input type="text" class="grow" placeholder="Search" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70">
+              <path fill-rule="evenodd"
+                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </label>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">P-Ticket</a>
+      <a class="btn btn-ghost text-xl raleway">P-Ticket</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li><a>Home</a></li>
         <li><a>About</a></li>
         <li><a>Destination</a></li>
-        <li><a>Search</a></li>
+        <label class="input input-bordered flex items-center gap-2">
+          <input type="text" class="grow" placeholder="Search" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70">
+            <path fill-rule="evenodd"
+              d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+              clip-rule="evenodd" />
+          </svg>
+        </label>
       </ul>
     </div>
     <div class="navbar-end">
@@ -53,37 +68,40 @@
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content w-screen">
       <div class="max-w-3xl text-white">
-        <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with <span class="text-[#1DD100]"><br> P Paribahan</span>
+        <h1 class="mb-5 text-5xl font-bold raleway">End-to-End Travel with <span class="text-[#1DD100]"><br> P
+            Paribahan</span>
         </h1>
         <p class="mb-5 max-w-screen-sm">Yes, you can run unit tests and view the results directly within the app. The
           integrated testing features allow for a streamlined .</p>
-        <button class="btn btn-primary text-black rounded-xl">Buy Tickets</button>
+        <button class="btn btn-primary text-black rounded-xl raleway">Buy Tickets</button>
       </div>
     </div>
   </div>
   <!-- best offer Section -->
   <div class="">
-    <h2 class="text-4xl lg:text-7xl text-black mt-28 text-center">Best offers for you</h2>
+    <h2 class="text-4xl lg:text-7xl text-black mt-28 text-center raleway">Best offers for you</h2>
     <div class="text-black flex flex-col lg:flex-row justify-between gap-5 mt-12">
       <!-- coupon card 1 -->
-      <div class="flex justify-between items-center bg-[#FFBF0F] w-screen lg:w-1/2 h-56 rounded-2xl p-4 gap-2">
+      <div class="flex justify-between items-center bg-[#FFBF0F] w-screen lg:w-1/2 h-52 rounded-2xl p-4 gap-2 raleway">
         <div class="w-screen lg:w-4/6 ">
           <h1 class="text-3xl lg:text-4xl font-black">15% OFF</h1>
           <p class="font-semibold">on your next purchase</p>
           <p class="font-medium text-[#03071266]">use by January 2024</p>
         </div>
+        <img src="images/cupon-devider.png" alt="">
         <div class="">
           <h1 class="text-3xl lg:text-4xl font-bold">NEW15</h1>
           <p class="mt-3 lg:mt-auto font-medium text-[#03071266]">Coupon Code</p>
         </div>
       </div>
       <!-- coupon card 2 -->
-      <div class="flex justify-between items-center bg-[#F78C9C] w-screen lg:w-1/2 rounded-2xl p-4 gap-2 h-56">
+      <div class="flex justify-between items-center bg-[#F78C9C] w-screen lg:w-1/2 rounded-2xl p-4 gap-2 h-52">
         <div class="w-screen lg:w-4/6">
           <h1 class="text-3xl lg:text-4xl font-black">20% OFF</h1>
           <p class="font-semibold">on your next purchase</p>
           <p class="font-medium text-[#03071266]">use by January 2024</p>
         </div>
+        <img src="images/cupon-devider.png" alt="">
         <div class="">
           <h1 class="text-3xl lg:text-4xl font-black">Couple 20</h1>
           <p class="mt-3 lg:mt-auto font-medium text-[#03071266]">Coupon Code</p>
@@ -91,7 +109,7 @@
       </div>
     </div>
     <div class="flex justify-center my-12">
-      <button class="btn btn-outline btn-primary rounded-xl px-5">See All Offers</button>
+      <button class="btn btn-outline btn-primary rounded-xl px-5 raleway">See All Offers</button>
     </div>
   </div>
   <!-- tricket booking -->
@@ -111,7 +129,7 @@
             <div class="flex p-4">
               <img class="p-2" src="images/bus-logo.png" alt="">
               <div class="w-full lg:w-auto">
-                <h3 class="text-xl lg:text-2xl">Greenline Paribahan</h3>
+                <h3 class="text-xl lg:text-2xl raleway">Greenline Paribahan</h3>
                 <p class="text-sm">Coach-009-WEB ! AC_Business</p>
               </div>
             </div>
@@ -141,36 +159,38 @@
           <div class="">
             <div class="flex-row lg:flex justify-evenly rounded-md shadow-sm" role="group">
               <button type="button"
-                class="w-full lg:w-auto px-4 py-4 text-sm font-medium text-[#030712CC] bg-[#0307120D] border border-gray-200 rounded-s-lg">
+                class="w-full lg:w-auto px-4 py-4 text-sm font-medium text-[#030712CC] bg-[#0307120D] border border-gray-200 rounded-lg">
                 Boarding Point - Laxmipur
               </button>
               <button type="button"
-                class="w-full lg:w-auto px-4 py-4 text-sm font-medium text-[#030712CC] bg-[#0307120D] border border-gray-200 rounded-s-lg">
+                class="w-full lg:w-auto px-4 py-4 text-sm font-medium text-[#030712CC] bg-[#0307120D] border border-gray-200 rounded-lg my-1">
                 Dropping Point - Bogura
               </button>
               <button type="button"
-                class="w-full lg:w-auto px-4 py-4 text-sm font-medium text-[#030712CC] bg-[#0307120D] border border-gray-200 rounded-s-lg">
+                class="w-full lg:w-auto px-4 py-4 text-sm font-medium text-[#030712CC] bg-[#0307120D] border border-gray-200 rounded-lg">
                 Est. Time - 11 Hour
               </button>
             </div>
           </div>
         </div>
+        <img class="" src="images/info-devider.png" alt="">
         <!-- right section tk -->
         <div class="flex flex-col justify-center items-center gap-4 mt-8 lg:mt-0">
           <img src="images/fare.png" alt="">
-          <h4 class="text-4xl mt-5">550 Taka <br><span class="text-[#03071299] text-3xl">Per Seat</span></h4>
+          <h4 class="text-4xl mt-5 raleway">550 Taka <br><span class="text-[#03071299] text-3xl">Per Seat</span></h4>
         </div>
       </div>
     </section>
     <section>
       <!-- Select Your Seat -->
-      <div class="flex mt-20">
+      <div class="flex flex-col lg:flex-row mt-20">
         <!-- left select aria-->
-        <div class="w-2/3">
-          <div class="">
-            <h2 class="text-4xl">Select Your Seat</h2>
-          </div>
+        <div class="w-full lg:w-2/3">
           <div class="divider"></div>
+          <div class="">
+            <h2 class="text-4xl text-center raleway">Select Your Seat</h2>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div class="flex justify-between w-full">
             <div class="flex text-[#03071280]">
               <img src="images/seat-gray.png" alt="">
@@ -185,98 +205,99 @@
           <div class="flex justify-end"><img class="w-28 h-14 rounded-xl bg-[#0307121A]"
               src="images/tabler-icon-steering-wheel.svg" alt=""></div>
           <!-- all area -->
-          <div class="">
-            <div class="flex justify-center gap-28 my-14 w-full">
+          <div class="raleway">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">A</kbd>
-              <kbd class="kbd rounded-lg">A1</kbd>
-              <kbd class="kbd rounded-lg">A2</kbd>
-              <kbd class="kbd rounded-lg">A3</kbd>
-              <kbd class="kbd rounded-lg">A4</kbd>
+              <kbd id="A1" class="kbd rounded-lg">A1</kbd>
+              <kbd id="A2" class="kbd rounded-lg">A2</kbd>
+              <kbd id="A3" class="kbd rounded-lg">A3</kbd>
+              <kbd id="A4" class="kbd rounded-lg">A4</kbd>
             </div>
-            <div class="flex justify-center gap-x-28 my-14 w-full">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">B</kbd>
-              <kbd class="kbd rounded-lg">B1</kbd>
-              <kbd class="kbd rounded-lg">B2</kbd>
-              <kbd class="kbd rounded-lg">B3</kbd>
-              <kbd class="kbd rounded-lg">B4</kbd>
+              <kbd id="B1" class="kbd rounded-lg">B1</kbd>
+              <kbd id="B2" class="kbd rounded-lg">B2</kbd>
+              <kbd id="B3" class="kbd rounded-lg">B3</kbd>
+              <kbd id="B4" class="kbd rounded-lg">B4</kbd>
             </div>
-            <div class="flex justify-center gap-28 my-14 w-full">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">C</kbd>
-              <kbd class="kbd rounded-lg">C1</kbd>
-              <kbd class="kbd rounded-lg">C2</kbd>
-              <kbd class="kbd rounded-lg">C3</kbd>
-              <kbd class="kbd rounded-lg">C4</kbd>
+              <kbd id="C1" class="kbd rounded-lg">C1</kbd>
+              <kbd id="C2" class="kbd rounded-lg">C2</kbd>
+              <kbd id="C3" class="kbd rounded-lg">C3</kbd>
+              <kbd id="C4" class="kbd rounded-lg">C4</kbd>
             </div>
-            <div class="flex justify-center gap-28 my-14 w-full">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">D</kbd>
-              <kbd class="kbd rounded-lg">D1</kbd>
-              <kbd class="kbd rounded-lg">D2</kbd>
-              <kbd class="kbd rounded-lg">D3</kbd>
-              <kbd class="kbd rounded-lg">D4</kbd>
+              <kbd id="D1" class="kbd rounded-lg">D1</kbd>
+              <kbd id="D2" class="kbd rounded-lg">D2</kbd>
+              <kbd id="D3" class="kbd rounded-lg">D3</kbd>
+              <kbd id="D4" class="kbd rounded-lg">D4</kbd>
             </div>
-            <div class="flex justify-center gap-28 my-14 w-full">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">E</kbd>
-              <kbd class="kbd rounded-lg">E1</kbd>
-              <kbd class="kbd rounded-lg">E2</kbd>
-              <kbd class="kbd rounded-lg">E3</kbd>
-              <kbd class="kbd rounded-lg">E4</kbd>
+              <kbd id="E1" class="kbd rounded-lg">E1</kbd>
+              <kbd id="E2" class="kbd rounded-lg">E2</kbd>
+              <kbd id="E3" class="kbd rounded-lg">E3</kbd>
+              <kbd id="E4" class="kbd rounded-lg">E4</kbd>
             </div>
-            <div class="flex justify-center gap-x-28 my-14 w-full">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">F</kbd>
-              <kbd class="kbd rounded-lg">F1</kbd>
-              <kbd class="kbd rounded-lg">F2</kbd>
-              <kbd class="kbd rounded-lg">F3</kbd>
-              <kbd class="kbd rounded-lg">F4</kbd>
+              <kbd id="F1" class="kbd rounded-lg">F1</kbd>
+              <kbd id="F2" class="kbd rounded-lg">F2</kbd>
+              <kbd id="F3" class="kbd rounded-lg">F3</kbd>
+              <kbd id="F4" class="kbd rounded-lg">F4</kbd>
             </div>
-            <div class="flex justify-center gap-28 my-14 w-full">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">G</kbd>
-              <kbd class="kbd rounded-lg">G1</kbd>
-              <kbd class="kbd rounded-lg">G2</kbd>
-              <kbd class="kbd rounded-lg">G3</kbd>
-              <kbd class="kbd rounded-lg">G4</kbd>
+              <kbd id="G1" class="kbd rounded-lg">G1</kbd>
+              <kbd id="G2" class="kbd rounded-lg">G2</kbd>
+              <kbd id="G3" class="kbd rounded-lg">G3</kbd>
+              <kbd id="G4" class="kbd rounded-lg">G4</kbd>
             </div>
-            <div class="flex justify-center gap-28 my-14 w-full">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">H</kbd>
-              <kbd class="kbd rounded-lg">H1</kbd>
-              <kbd class="kbd rounded-lg">H2</kbd>
-              <kbd class="kbd rounded-lg">H3</kbd>
-              <kbd class="kbd rounded-lg">H4</kbd>
+              <kbd id="H1" class="kbd rounded-lg">H1</kbd>
+              <kbd id="H2" class="kbd rounded-lg">H2</kbd>
+              <kbd id="H3" class="kbd rounded-lg">H3</kbd>
+              <kbd id="H4" class="kbd rounded-lg">H4</kbd>
             </div>
-            <div class="flex justify-center gap-28 my-14 w-full">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">I</kbd>
-              <kbd class="kbd rounded-lg">I1</kbd>
-              <kbd class="kbd rounded-lg">I2</kbd>
-              <kbd class="kbd rounded-lg">I3</kbd>
-              <kbd class="kbd rounded-lg">I4</kbd>
+              <kbd id="I1" class="kbd rounded-lg">I1</kbd>
+              <kbd id="I2" class="kbd rounded-lg">I2</kbd>
+              <kbd id="I3" class="kbd rounded-lg">I3</kbd>
+              <kbd id="I4" class="kbd rounded-lg">I4</kbd>
             </div>
-            <div class="flex justify-center gap-28 my-14 w-full">
+            <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kbd rounded-lg">J</kbd>
-              <kbd class="kbd rounded-lg">J1</kbd>
-              <kbd class="kbd rounded-lg">J2</kbd>
-              <kbd class="kbd rounded-lg">J3</kbd>
-              <kbd class="kbd rounded-lg">J4</kbd>
+              <kbd id="J1" class="kbd rounded-lg">J1</kbd>
+              <kbd id="J2" class="kbd rounded-lg">J2</kbd>
+              <kbd id="J3" class="kbd rounded-lg">J3</kbd>
+              <kbd id="J4" class="kbd rounded-lg">J4</kbd>
             </div>
           </div>
         </div>
         <div class="divider xl:divider-horizontal"></div>
         <!-- Right select aria -->
-        <div class="w-2/6">
+        <div class="w-full lg:w-2/6">
           <!-- top select your set -->
-          <div class="flex flex-col justify-center items-center">
+          <div class="flex flex-col justify-center items-center mt-16">
+            <div class="divider"></div>
             <div class="w-full">
-              <h2 class="text-4xl text-center">Select Your Seat</h2>
+              <h2 class="text-4xl text-center raleway">Select Your Seat</h2>
             </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-6" />
             <div class="overflow-x-auto w-full">
               <table class="table">
                 <!-- head -->
                 <thead>
-                  <tr>
+                  <tr class="text-black">
                     <th>Seat</th>
                     <th>Class</th>
                     <th>Price </th>
                   </tr>
                 </thead>
-                <div class="divider"></div>
                 <tbody>
                   <!-- row 1 -->
                   <tr>
@@ -285,54 +306,108 @@
                     <td>550</td>
                   </tr>
                 </tbody>
-                <tfoot>
+                <thead>
                   <tr>
-                    <td>Total</td>
-                    <td>00</td>
+                    <td class="font-bold text-black">Total Price</td>
+                    <td></td>
+                    <td class="font-bold text-black">BDT: <span>00</span></td>
                   </tr>
-                </tfoot>
+                </thead>
               </table>
-              <div class="divider"></div>
+              <div class="overflow-x-auto w-full">
+                <!-- cuppon input section -->
+                <div class="grid grid-cols-8 gap-2 w-full my-8">
+                  <label for="npm-install" class="sr-only">Label</label>
+                  <input id="" type="text"
+                    class="col-span-6  border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5   dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Have any copupon?">
+                  <button
+                    class="col-span-2 text-white bg-[#1DD100] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto py-2.5 text-center dark:bg-[#1DD100] dark:hover:bg-blue-700 dark:focus:ring-blue-800 items-center inline-flex justify-center">
+                    <span id="default-message">Apply</span>
+                  </button>
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <td class="font-bold text-black">Grand Total</td>
+                      <td></td>
+                      <td class="font-bold text-black">BDT: <span>00</span></td>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
             </div>
           </div>
-          <!-- bottom you information -->
-          <div class=""></div>
+          <!-- bottom your information -->
+          <div class="h-full mt-auto lg:mt-20">
+            <form class="max-w-sm mx-auto">
+              <div class="mb-5">
+                <label for="text" class="block mb-2 text-sm font-medium text-[#030712]">Passenger Name*</label>
+                <input type="text" id="text"
+                  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                  placeholder="Enter your name" required />
+              </div>
+              <div class="mb-5">
+                <label for="repeat-text" class="block mb-2 text-sm font-medium text-[#030712]">Phone Number*</label>
+                <input type="tel" id="repeat-text"
+                  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                  placeholder="Enter your phone number" required />
+              </div>
+              <div class="mb-5">
+                <label for="email" class="block mb-2 text-sm font-medium text-[#030712]">Email ID</label>
+                <input type="email" id="email"
+                  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                  placeholder="Enter your email id" required />
+              </div>
+              <button type="submit"
+                class="text-white bg-[#1DD100] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800 my-4 w-full">Next</button>
+              <div class="flex justify-between items-start mb-5">
+                <label for="terms"><a href="#" class="text-blue-600 hover:underline dark:text-blue-500">Terms and
+                    Conditions</a></label>
+                <label for="terms"><a href="#" class="text-blue-600 hover:underline dark:text-blue-500">Cancellation
+                    Policy</a></label>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+  <!-- footer section -->
+  <footer class="bg-white rounded-lg shadow dark:bg-gray-900 ">
+    <div class="w-full  mx-3  p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-          <img src="images/bus-logo.png" class="h-8" alt="" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">P-Ticket</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white raleway">P-Ticket</span>
           <p class="">P-Ticket is a digital platform to make your daily commuting better.</p>
         </a>
-        <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-          <p class="">Download our app</p>
-          <img src="images/playstore.png" class="h-8" alt="" />
+        <a href="#" class="flex flex-col items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+          <p class="raleway text-white text-xl">Download our app</p>
+          <img src="images/Group 104.svg" class="mt-4" alt="" />
         </a>
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">@all rights reserved,<a
-          href="https://flowbite.com/" class="hover:underline"> P-Ticke™</a> services limited.2024
-      </span>
-      <!-- --------- -->
-      <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-        <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Terms & condition</a>
-        </li>
-        <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Return & refund policy</a>
-        </li>
-        <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-        </li>
-      </ul>
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-between">
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">@all rights reserved,<a
+            href="https://flowbite.com/" class="hover:underline"> P-Ticke™</a> services limited.2024
+        </span>
+        <!-- --------- -->
+        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Terms & condition</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Return & refund policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
   <script src="js/utility.js"></script>
   <script src="js/index.js"></script>
 </body>
+
 </html>
