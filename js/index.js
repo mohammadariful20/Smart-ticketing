@@ -82,3 +82,14 @@ function couponCode() {
     document.getElementById('coupon-success-message').classList.remove('hidden');
   }
 }
+document.getElementById("scrollBtn").addEventListener("click", function() {
+  // Get the position of the element with id "set-select"
+  let scrollToPosition = document.getElementById('set-select').offsetTop;
+  
+  // Scroll smoothly to the calculated position
+  window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+  });
+});
+
