@@ -1,29 +1,44 @@
-// Select all buttons and store them in a NodeList
-const buttons = document.querySelectorAll('.kbd');
 
-// Variable to keep track of the currently selected button
-let selectedButton = null;
+let kbdButtons = document.querySelectorAll('.kbd');
+let selectedCount = 0;
+let maxSelection = 4;
 
-// Function to deselect all buttons except the clicked one
-function selectButton(button) {
-    buttons.forEach(function(btn) {
-        if (btn !== button) {
-            btn.classList.remove('selected');
-        }
-    });
+function handleClick(button) {
+  // Toggle the selected
+  button.classList.toggle('selected');
+  // console.log(button.innerHTML);
+  // Update the selected count
+  selectedCount = document.querySelectorAll('.selected').length;
+  // console.log(selectedCount);
+  setValueById('select-set',selectedCount)
+  let selectSet=getValueById('select-set')
+  let updateLiftSet= (40 - selectSet);
+  setValueById('lift-set',updateLiftSet)
+  //add set number and deatils
+
+  // If the selected count exceeds the maximum allowed, deselect the last selected button
+  if (selectedCount > maxSelection) {
+    let selectedButtons = document.querySelectorAll('.selected');
+    selectedButtons[selectedButtons.length - 1].classList.remove('selected');
+    selectedCount--;
+    
+  }
 }
 
-// Loop through each button in the NodeList
-buttons.forEach(function(button) {
-    // Add a click event listener to each button
-    button.addEventListener('click', function() {
-        // Deselect all buttons except the clicked one
-        selectButton(button);
-
-        // Toggle the selected state of the clicked button
-        button.classList.toggle('selected');
-
-        // Update the selectedButton variable
-        selectedButton = button.classList.contains('selected') ? button : null;
-    });
+kbdButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    handleClick(button);
+  });
 });
+// coupon verify
+function couponCode() {
+  let couponInput = document.getElementById('coupon-input').value;
+  let couponList = ['NEW15', 'Couple 20'];
+  let couponSuccessMessage = document.getElementById('coupon-display');
+
+  // Check if the input value matches any coupon in the coupon list
+  if (couponList.includes(couponInput)) {
+    couponSuccessMessage.classList.add('hidden');
+    document.getElementById('coupon-success-message').classList.remove('hidden');
+  }
+}

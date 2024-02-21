@@ -1,13 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-.raleway{
+.raleway {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
 }
-.selected {
-  background-color: rgb(214, 23, 135);
-}
+
