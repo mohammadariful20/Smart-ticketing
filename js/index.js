@@ -26,21 +26,24 @@ function handleClick(button) {
   let selectSet=getValueById('select-set');
   let updateLiftSet= (40 - selectSet);
   setValueById('lift-set',updateLiftSet);
+  // console.log(selectSet);
+  //update tricket price
+  let totalPrice= selectSet * 550;
+  let totalPriceUpdate=setValueById('total-price',totalPrice)
+  setValueById('grand-total-price',totalPrice)
 
-  if (selectSet === 4) {
-    const elementId=document.getElementById('disable-btn')
-    elementId.classList.remove('btn-disabled')
-  }
+
   // If the selected count exceeds the maximum allowed, deselect the last selected button
   if (selectedCount > maxSelection) {
     let selectedButtons = document.querySelectorAll('.selected');
     selectedButtons[selectedButtons.length - 1].classList.remove('selected');
     selectedCount--;
-
-      
-    
   }
-  
+  //4 set select to apply button enable
+  if (selectedCount === 4) {
+    const elementId=document.getElementById('disable-btn')
+    elementId.classList.remove('btn-disabled')
+  }
   // Add selected items to the table
   updateSelectedItemsTable();
 }
