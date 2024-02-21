@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
   <title>Smart-ticketing</title>
   <!-- tailwind css and daisyUI CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -13,18 +12,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
   <style>
     .kbd {
-      width: 110px;
-      height: 56px;
+ 
       flex-shrink: 0;
       border-radius: 12px;
       background: #f7f8f8;
     }
-
     .kb {
-      width: 110px;
+      width: 112px;
       height: 56px;
       flex-shrink: 0;
       border-radius: 12px;
@@ -35,12 +33,34 @@
       border-radius: 12px;
       border: 1px solid #CECAD1;
     }
-
     .selected {
       border-radius: 12px;
       border: 1px solid var(--primary-700, #1DD100);
       background: var(--primary-700, #1DD100);
     }
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #divider-img{
+    display: none;
+  }
+  .kb{
+    display: none;
+    width: 0px;
+    border: 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 776px) {
+  #divider-img{
+    display: none;
+  }
+  .kb{
+    display: none;
+    width: 0px;
+    border: 0;
+  }
+}
   </style>
 </head>
 
@@ -201,7 +221,7 @@
             </div>
           </div>
         </div>
-        <img class="" src="images/info-devider.png" alt="">
+        <img id="divider-img" src="images/info-devider.png" alt="">
         <!-- right section tk -->
         <div class="flex flex-col justify-center items-center gap-4 mt-8 lg:mt-0">
           <img src="images/fare.png" alt="">
@@ -236,73 +256,73 @@
           <div class="raleway">
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">A</kbd>
-              <kbd id="A1" class="kbd rounded-lg">A1</kbd>
-              <kbd id="A2" class="kbd rounded-lg">A2</kbd>
-              <kbd id="A3" class="kbd rounded-lg">A3</kbd>
-              <kbd id="A4" class="kbd rounded-lg">A4</kbd>
+              <kbd id="A1" class="kbd w-16 lg:w-28 h-14 rounded-lg">A1</kbd>
+              <kbd id="A2" class="kbd w-16 lg:w-28 h-14 rounded-lg">A2</kbd>
+              <kbd id="A3" class="kbd w-16 lg:w-28 h-14 rounded-lg">A3</kbd>
+              <kbd id="A4" class="kbd w-16 lg:w-28 h-14 rounded-lg">A4</kbd>
             </div>
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">B</kbd>
-              <kbd id="B1" class="kbd rounded-lg">B1</kbd>
-              <kbd id="B2" class="kbd rounded-lg">B2</kbd>
-              <kbd id="B3" class="kbd rounded-lg">B3</kbd>
-              <kbd id="B4" class="kbd rounded-lg">B4</kbd>
+              <kbd id="B1" class="kbd w-16 lg:w-28 h-14 rounded-lg">B1</kbd>
+              <kbd id="B2" class="kbd w-16 lg:w-28 h-14 rounded-lg">B2</kbd>
+              <kbd id="B3" class="kbd w-16 lg:w-28 h-14 rounded-lg">B3</kbd>
+              <kbd id="B4" class="kbd w-16 lg:w-28 h-14 rounded-lg">B4</kbd>
             </div>
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">C</kbd>
-              <kbd id="C1" class="kbd rounded-lg">C1</kbd>
-              <kbd id="C2" class="kbd rounded-lg">C2</kbd>
-              <kbd id="C3" class="kbd rounded-lg">C3</kbd>
-              <kbd id="C4" class="kbd rounded-lg">C4</kbd>
+              <kbd id="C1" class="kbd rounded-lg w-16 lg:w-28 h-14">C1</kbd>
+              <kbd id="C2" class="kbd rounded-lg w-16 lg:w-28 h-14">C2</kbd>
+              <kbd id="C3" class="kbd rounded-lg w-16 lg:w-28 h-14">C3</kbd>
+              <kbd id="C4" class="kbd rounded-lg w-16 lg:w-28 h-14">C4</kbd>
             </div>
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">D</kbd>
-              <kbd id="D1" class="kbd rounded-lg">D1</kbd>
-              <kbd id="D2" class="kbd rounded-lg">D2</kbd>
-              <kbd id="D3" class="kbd rounded-lg">D3</kbd>
-              <kbd id="D4" class="kbd rounded-lg">D4</kbd>
+              <kbd id="D1" class="kbd rounded-lg w-16 lg:w-28 h-14">D1</kbd>
+              <kbd id="D2" class="kbd rounded-lg w-16 lg:w-28 h-14">D2</kbd>
+              <kbd id="D3" class="kbd rounded-lg w-16 lg:w-28 h-14">D3</kbd>
+              <kbd id="D4" class="kbd rounded-lg w-16 lg:w-28 h-14">D4</kbd>
             </div>
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">E</kbd>
-              <kbd id="E1" class="kbd rounded-lg">E1</kbd>
-              <kbd id="E2" class="kbd rounded-lg">E2</kbd>
-              <kbd id="E3" class="kbd rounded-lg">E3</kbd>
-              <kbd id="E4" class="kbd rounded-lg">E4</kbd>
+              <kbd id="E1" class="kbd rounded-lg w-16 lg:w-28 h-14">E1</kbd>
+              <kbd id="E2" class="kbd rounded-lg w-16 lg:w-28 h-14">E2</kbd>
+              <kbd id="E3" class="kbd rounded-lg w-16 lg:w-28 h-14">E3</kbd>
+              <kbd id="E4" class="kbd rounded-lg w-16 lg:w-28 h-14">E4</kbd>
             </div>
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">F</kbd>
-              <kbd id="F1" class="kbd rounded-lg">F1</kbd>
-              <kbd id="F2" class="kbd rounded-lg">F2</kbd>
-              <kbd id="F3" class="kbd rounded-lg">F3</kbd>
-              <kbd id="F4" class="kbd rounded-lg">F4</kbd>
+              <kbd id="F1" class="kbd rounded-lg w-16 lg:w-28 h-14">F1</kbd>
+              <kbd id="F2" class="kbd rounded-lg w-16 lg:w-28 h-14">F2</kbd>
+              <kbd id="F3" class="kbd rounded-lg w-16 lg:w-28 h-14">F3</kbd>
+              <kbd id="F4" class="kbd rounded-lg w-16 lg:w-28 h-14">F4</kbd>
             </div>
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">G</kbd>
-              <kbd id="G1" class="kbd rounded-lg">G1</kbd>
-              <kbd id="G2" class="kbd rounded-lg">G2</kbd>
-              <kbd id="G3" class="kbd rounded-lg">G3</kbd>
-              <kbd id="G4" class="kbd rounded-lg">G4</kbd>
+              <kbd id="G1" class="kbd rounded-lg w-16 lg:w-28 h-14">G1</kbd>
+              <kbd id="G2" class="kbd rounded-lg w-16 lg:w-28 h-14">G2</kbd>
+              <kbd id="G3" class="kbd rounded-lg w-16 lg:w-28 h-14">G3</kbd>
+              <kbd id="G4" class="kbd rounded-lg w-16 lg:w-28 h-14">G4</kbd>
             </div>
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">H</kbd>
-              <kbd id="H1" class="kbd rounded-lg">H1</kbd>
-              <kbd id="H2" class="kbd rounded-lg">H2</kbd>
-              <kbd id="H3" class="kbd rounded-lg">H3</kbd>
-              <kbd id="H4" class="kbd rounded-lg">H4</kbd>
+              <kbd id="H1" class="kbd rounded-lg w-16 lg:w-28 h-14">H1</kbd>
+              <kbd id="H2" class="kbd rounded-lg w-16 lg:w-28 h-14">H2</kbd>
+              <kbd id="H3" class="kbd rounded-lg w-16 lg:w-28 h-14">H3</kbd>
+              <kbd id="H4" class="kbd rounded-lg w-16 lg:w-28 h-14">H4</kbd>
             </div>
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">I</kbd>
-              <kbd id="I1" class="kbd rounded-lg">I1</kbd>
-              <kbd id="I2" class="kbd rounded-lg">I2</kbd>
-              <kbd id="I3" class="kbd rounded-lg">I3</kbd>
-              <kbd id="I4" class="kbd rounded-lg">I4</kbd>
+              <kbd id="I1" class="kbd rounded-lg w-16 lg:w-28 h-14">I1</kbd>
+              <kbd id="I2" class="kbd rounded-lg w-16 lg:w-28 h-14">I2</kbd>
+              <kbd id="I3" class="kbd rounded-lg w-16 lg:w-28 h-14">I3</kbd>
+              <kbd id="I4" class="kbd rounded-lg w-16 lg:w-28 h-14">I4</kbd>
             </div>
             <div class="flex justify-center gap-10 lg:gap-28 my-10 lg:my-14 w-full">
               <kbd class="kb rounded-lg">J</kbd>
-              <kbd id="J1" class="kbd rounded-lg">J1</kbd>
-              <kbd id="J2" class="kbd rounded-lg">J2</kbd>
-              <kbd id="J3" class="kbd rounded-lg">J3</kbd>
-              <kbd id="J4" class="kbd rounded-lg">J4</kbd>
+              <kbd id="J1" class="kbd rounded-lg w-16 lg:w-28 h-14">J1</kbd>
+              <kbd id="J2" class="kbd rounded-lg w-16 lg:w-28 h-14">J2</kbd>
+              <kbd id="J3" class="kbd rounded-lg w-16 lg:w-28 h-14">J3</kbd>
+              <kbd id="J4" class="kbd rounded-lg w-16 lg:w-28 h-14">J4</kbd>
             </div>
           </div>
         </div>

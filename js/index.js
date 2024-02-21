@@ -1,16 +1,3 @@
-
-// coupon verify
-function couponCode() {
-  let couponInput = document.getElementById('coupon-input').value;
-  let couponList = ['NEW15', 'Couple 20'];
-  let couponSuccessMessage = document.getElementById('coupon-display');
-
-  // Check if the input value matches any coupon in the coupon list
-  if (couponList.includes(couponInput)) {
-    couponSuccessMessage.classList.add('hidden');
-    document.getElementById('coupon-success-message').classList.remove('hidden');
-  }
-}
 //------------------
 let kbdButtons = document.querySelectorAll('.kbd');
 let selectedCount = 0;
@@ -82,3 +69,16 @@ kbdButtons.forEach(function(button) {
     handleClick(button);
   });
 });
+
+// coupon verify
+function couponCode() {
+  let couponInput = document.getElementById('coupon-input').value;
+  let couponList = ['NEW15', 'Couple 20'];
+  let couponSuccessMessage = document.getElementById('coupon-display');
+
+  // Check if the input value matches any coupon in the coupon list
+  if (couponList.includes(couponInput)) {
+    couponSuccessMessage.classList.add('hidden');
+    document.getElementById('coupon-success-message').classList.remove('hidden');
+  }
+}
