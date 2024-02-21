@@ -1,35 +1,4 @@
-/*
-let kbdButtons = document.querySelectorAll('.kbd');
-let selectedCount = 0;
-let maxSelection = 4;
 
-function handleClick(button) {
-  // Toggle the selected
-  button.classList.toggle('selected');
-  // console.log(button.innerHTML);
-  // Update the selected count
-  selectedCount = document.querySelectorAll('.selected').length;
-  // console.log(selectedCount);
-  setValueById('select-set',selectedCount)
-  let selectSet=getValueById('select-set')
-  let updateLiftSet= (40 - selectSet);
-  setValueById('lift-set',updateLiftSet)
-  //add set number and deatils
-
-  // If the selected count exceeds the maximum allowed, deselect the last selected button
-  if (selectedCount > maxSelection) {
-    let selectedButtons = document.querySelectorAll('.selected');
-    selectedButtons[selectedButtons.length - 1].classList.remove('selected');
-    selectedCount--;
-    
-  }
-}
-
-kbdButtons.forEach(function(button) {
-  button.addEventListener('click', function() {
-    handleClick(button);
-  });
-});*/
 // coupon verify
 function couponCode() {
   let couponInput = document.getElementById('coupon-input').value;
@@ -58,17 +27,24 @@ function handleClick(button) {
   let updateLiftSet= (40 - selectSet);
   setValueById('lift-set',updateLiftSet);
 
+  if (selectSet === 4) {
+    const elementId=document.getElementById('disable-btn')
+    elementId.classList.remove('btn-disabled')
+  }
   // If the selected count exceeds the maximum allowed, deselect the last selected button
   if (selectedCount > maxSelection) {
     let selectedButtons = document.querySelectorAll('.selected');
     selectedButtons[selectedButtons.length - 1].classList.remove('selected');
     selectedCount--;
+
+      
+    
   }
   
   // Add selected items to the table
   updateSelectedItemsTable();
 }
-
+// set select and update show
 function updateSelectedItemsTable() {
   let tableBody = document.querySelector('#table tbody');
   tableBody.innerHTML = ''; // Clear existing rows

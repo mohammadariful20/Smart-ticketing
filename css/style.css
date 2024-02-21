@@ -8,4 +8,6 @@
   font-weight: weight;
   font-style: normal;
 }
-
+.btn-disabled{
+  background-color: #D0C9CE;
+}
